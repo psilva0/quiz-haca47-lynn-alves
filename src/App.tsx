@@ -292,17 +292,23 @@ const S: any = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    background: "linear-gradient(135deg,#eef2ff,#f5f3ff)",
+    // Fundo mais escuro e moderno para dar contraste com o cartão branco
+    background: "linear-gradient(135deg, #1e1b4b, #4c1d95)",
     fontFamily: "system-ui, sans-serif",
+    padding: 20, // Garante que não encoste nas bordas no celular
+    boxSizing: "border-box",
   },
 
   card: {
     background: "white",
+    color: "#1f2937", // 🔥 CORRIGIDO: Força a cor do texto para um cinza bem escuro
     padding: 30,
     borderRadius: 20,
-    width: 380,
+    width: "100%",
+    maxWidth: 400, // Melhor para responsividade
     textAlign: "center",
-    boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+    boxShadow: "0 10px 30px rgba(0,0,0,0.3)",
+    boxSizing: "border-box",
   },
 
   input: {
@@ -311,49 +317,63 @@ const S: any = {
     marginBottom: 12,
     borderRadius: 10,
     border: "1px solid #ddd",
-    fontSize: 14,
+    fontSize: 16, // Aumentado para 16px para evitar zoom automático no iOS
+    color: "#1f2937", // 🔥 CORRIGIDO: Texto do input escuro
+    boxSizing: "border-box",
+    outline: "none",
   },
 
   btn: {
     width: "100%",
     padding: 14,
     marginTop: 10,
-    background: "linear-gradient(135deg,#4f46e5,#7c3aed)",
+    background: "linear-gradient(135deg, #4f46e5, #7c3aed)",
     color: "white",
     border: "none",
     borderRadius: 12,
+    fontSize: 16,
     fontWeight: 600,
     cursor: "pointer",
+    boxSizing: "border-box",
   },
 
   ghost: {
     width: "100%",
     padding: 12,
     marginTop: 10,
-    background: "white",
-    border: "1px solid #ddd",
+    background: "transparent",
+    border: "2px solid #e5e7eb",
     borderRadius: 12,
-    color: "#555",
+    color: "#4b5563", // 🔥 CORRIGIDO: Cor visível no fundo branco
+    fontSize: 16,
+    fontWeight: 600,
     cursor: "pointer",
+    boxSizing: "border-box",
   },
 
   opt: {
     width: "100%",
-    padding: 12,
+    padding: 14,
     marginTop: 10,
     borderRadius: 12,
     border: "1px solid #ddd",
     background: "#f9fafb",
+    color: "#374151", // 🔥 CORRIGIDO: Força o texto das opções para escuro
     textAlign: "left",
+    fontSize: 15,
+    lineHeight: "1.4",
     cursor: "pointer",
-    transition: "all 0.2s",
+    boxSizing: "border-box",
   },
 
   rank: {
     display: "flex",
     justifyContent: "space-between",
-    padding: 10,
+    alignItems: "center", // Garante que fiquem alinhados verticalmente
+    padding: "12px 10px",
     borderBottom: "1px solid #eee",
-    fontSize: 14,
+    fontSize: 16,
+    color: "#374151", // 🔥 CORRIGIDO: Texto do ranking visível
+    fontWeight: 500,
   },
 };
