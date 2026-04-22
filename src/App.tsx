@@ -312,7 +312,7 @@ const S: any = {
     padding: 12,
     marginTop: 10,
     background: "#4f46e5",
-    color: "white",
+    color: "black",
     border: "none",
     borderRadius: 10,
   },
