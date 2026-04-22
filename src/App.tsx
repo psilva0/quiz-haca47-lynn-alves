@@ -286,7 +286,7 @@ export default function App() {
 }
 
 // ================= ESTILO =================
-const S = {
+const S: any = {
   page: {
     minHeight: "100vh",
     display: "flex",
